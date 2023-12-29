@@ -14,7 +14,7 @@ const randomNumber = getRandomNumber(100);
 
 let attempts = 0;
 
-paragraphResult.innerHTML = " Escribe el número y dale a prueba";
+
 
 //FUNCIONES
 
