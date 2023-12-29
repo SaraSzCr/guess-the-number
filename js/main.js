@@ -21,40 +21,32 @@ function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
-
-const feedbackClue = (message) => {
+const paintClue = (message) => {
   paragraphResult.innerHTML = message;
-}
+};
 
-const textResult = () => {
-
+const showResultMessage = () => {
   const inputValue = parseInt(userInput.value);
   console.log(inputValue, randomNumber);
 
-  if (isNaN (inputValue)){
-    feedbackClue ('El número debe estar entre 1 y 100.');
+  if (isNaN(inputValue)) {
+    paintClue("El número debe estar entre 1 y 100.");
+  } else if (inputValue < 1 || inputValue > 100) {
+    paintClue("El número debe estar entre 1 y 100.");
+  } else if (inputValue === randomNumber) {
+    paintClue("Has ganado campeona!!!");
+  } else if (inputValue > randomNumber) {
+    paintClue(" Demasiado alto.");
+  } else if (inputValue < randomNumber) {
+    paintClue("Demasiado bajo.");
   }
-  else if (inputValue < 1 || inputValue > 100) {
-    feedbackClue ('El número debe estar entre 1 y 100.');
-  }
-  else if (inputValue === randomNumber) {
-    feedbackClue ('Has ganado campeona!!!');
-  }
-  else if (inputValue > randomNumber) {
-    feedbackClue(' Demasiado alto.');
-  } 
-  else if (inputValue < randomNumber) {
-    feedbackClue('Demasiado bajo.');
-  }  
-  
-  
 };
 
 const writeAttempts = () => {
   userAttempts.innerHTML = attempts;
 };
 
-const numberOfAttempts = () => {
+const increaseAttempts = () => {
   attempts++;
   writeAttempts();
 };
@@ -64,11 +56,9 @@ const numberOfAttempts = () => {
 const handleClickButton = (event) => {
   event.preventDefault();
 
-  
+  showResultMessage();
 
-  textResult();
-
-  numberOfAttempts();
+  increaseAttempts();
 };
 
 mainButton.addEventListener("click", handleClickButton);
