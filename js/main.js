@@ -6,6 +6,7 @@ const mainButton = document.querySelector(".js_button");
 const userInput = document.querySelector(".js_inputNumber");
 const paragraphResult = document.querySelector(".js_paragraphResult");
 const userAttempts = document.querySelector(".js_attempts");
+const resetBtn = document.querySelector(".js_resetBtn");
 
 //VARIABLES
 
@@ -62,3 +63,17 @@ const handleClickButton = (event) => {
 };
 
 mainButton.addEventListener("click", handleClickButton);
+
+const handleClickResetBtn = (event) => {
+  // const randomNumber = getRandomNumber(100);
+
+  paintClue("Escribe el número y dale a prueba");
+  userAttempts.innerHTML = "0";
+  form.reset();
+};
+
+resetBtn.addEventListener("click", handleClickResetBtn);
+
+// function getRandomNumber(max) {
+//   return Math.ceil(Math.random() * max);
+// }
