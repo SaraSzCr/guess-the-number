@@ -41,6 +41,9 @@ const showResultMessage = () => {
   } else if (inputValue < randomNumber) {
     paintClue("Demasiado bajo.");
   }
+  if (attempts >= 5) {
+    paintClue("The game is over");
+  }
 };
 
 const writeAttempts = () => {
@@ -77,3 +80,4 @@ resetBtn.addEventListener("click", handleClickResetBtn);
 // function getRandomNumber(max) {
 //   return Math.ceil(Math.random() * max);
 // }
+
