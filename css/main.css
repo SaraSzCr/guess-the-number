@@ -1,0 +1,18 @@
+body {
+  margin: 1rem;
+  color: dimgrey;
+  font-size: 20px;
+}
+
+.title{
+    color: gray;
+    font-style: italic;
+}
+
+.btn{
+    background-color: cadetblue;
+}
+.attempts{
+    font-weight: bold;
+    color: cadetblue;
+}
