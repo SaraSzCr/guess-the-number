@@ -10,11 +10,9 @@ const resetBtn = document.querySelector(".js_resetBtn");
 
 //VARIABLES
 
-const randomNumber = getRandomNumber(100);
+const randomNumber = getRandomNumber(100); //9
 
 let attempts = 0;
-
-
 
 //FUNCIONES
 
@@ -55,6 +53,11 @@ const increaseAttempts = () => {
   writeAttempts();
 };
 
+const resetAttempts = () => {
+  attempts = 0;
+  writeAttempts();
+};
+
 //FUNCIONES/EVENTOS
 
 const handleClickButton = (event) => {
@@ -68,16 +71,11 @@ const handleClickButton = (event) => {
 mainButton.addEventListener("click", handleClickButton);
 
 const handleClickResetBtn = (event) => {
-  // const randomNumber = getRandomNumber(100);
+  const randomNumber = getRandomNumber(100);
 
+  resetAttempts();
   paintClue("Escribe el número y dale a prueba");
-  userAttempts.innerHTML = "0";
   form.reset();
 };
 
 resetBtn.addEventListener("click", handleClickResetBtn);
-
-// function getRandomNumber(max) {
-//   return Math.ceil(Math.random() * max);
-// }
-
