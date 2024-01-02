@@ -29,18 +29,18 @@ const showResultMessage = () => {
   console.log(inputValue, randomNumber);
 
   if (isNaN(inputValue)) {
-    paintClue("El número debe estar entre 1 y 100.");
+    paintClue('El número debe estar entre 1 y 100.');
   } else if (inputValue < 1 || inputValue > 100) {
-    paintClue("El número debe estar entre 1 y 100.");
+    paintClue('El número debe estar entre 1 y 100.');
   } else if (inputValue === randomNumber) {
-    paintClue("Has ganado campeona!!!");
+    paintClue('Has ganado campeona!!!');
   } else if (inputValue > randomNumber) {
-    paintClue(" Demasiado alto.");
+    paintClue('Demasiado alto.');
   } else if (inputValue < randomNumber) {
-    paintClue("Demasiado bajo.");
+    paintClue('Demasiado bajo.');
   }
   if (attempts >= 5) {
-    paintClue("The game is over");
+    paintClue(' "The game is over". ');
   }
 };
 
