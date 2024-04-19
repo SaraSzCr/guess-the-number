@@ -39,4 +39,4 @@ git clone https://github.com/SaraSzCr/guess-the-number.git
 
 ## Autora 👩‍💻
 
-[Sara Sánchez](https://github.com/SaraSzCr)
+[Sara Sánchez Crespo](https://github.com/SaraSzCr)
