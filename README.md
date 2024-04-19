@@ -26,7 +26,7 @@ Observa el número de intentos realizados.
 
 ## Link Github Pages 
 
-http://beta.adalab.es/modulo-2-evaluacion-intermedia-SaraSzCr/
+https://saraszcr.github.io/guess-the-number/
 
 ## Guía rápida de ejecución 🚀
 
