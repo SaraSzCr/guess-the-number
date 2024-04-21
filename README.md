@@ -37,6 +37,9 @@ git clone https://github.com/SaraSzCr/guess-the-number.git
 2. Abre el archivo index.html en tu navegador
 
 
-## Autora 👩‍💻
+## Autora 👩🏻‍💻
 
-[Sara Sánchez Crespo](https://github.com/SaraSzCr)
+Sara Sánchez Crespo
+[Github] (https://github.com/SaraSzCr)
+[Linkedin] (www.linkedin.com/in/sara-sanchez-crespo)
+[email] (scresposara@gmail.com)
