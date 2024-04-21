@@ -6,33 +6,43 @@
     <title>Modulo 2 Evaluacion Intermedia</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
- 
-  
-    <body>
-      <header>
-        <h1 class="title">Adivina el número</h1>
-      </header>
-      
-      <main class="main">
-       
-          <form class="form" id="form">
-            <label for="number">Introduce aquí tu número</label>
-            <input class="js_inputNumber" type="text" name="number" id="number" placeholder="Ej: 25" />
-            <input class="js_button btnTry" type="submit" value="Prueba" />
-          </form>
-      
-        <p class="js_paragraphResult">Escribe un número y dale a prueba</p>
-        <p class="js_paragraphTries" >Número de intentos (máx 5 intentos) <span class="js_attempts attempts">0</span></p>
-        <button class="js_resetBtn btnReset">Juega otra vez</button>
-      </main>
-      <footer class="footer">
-        Creado por SaraSC
-      </footer>
 
+  <body>
+    <header>
+      <h1 class="title">Adivina el número</h1>
+    </header>
 
-      <script src="./js/main.js"></script>
-    
-    </body>
+    <main class="main">
+      <form class="form" id="form">
+        <label for="number">Introduce aquí tu número</label>
+        <input
+          class="js_inputNumber"
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Ej: 25"
+        />
+        <input class="button js_button" type="submit" value="Prueba" />
+      </form>
 
-  
+      <p class="js_paragraphResult"></p>
+      <p class="js_paragraphTries">
+        Número de intentos (máx 5 intentos)
+        <span class="js_attempts attempts">0</span>
+      </p>
+      <button class="button js_resetBtn">Juega otra vez</button>
+    </main>
+    <footer class="footer">
+      Creado por
+      <a
+        class="author"
+        href="https://github.com/SaraSzCr"
+        target="_blank"
+        rel="noopener noreferrer"
+        >SaraSC</a
+      >
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>

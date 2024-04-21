@@ -40,7 +40,7 @@ const showResultMessage = () => {
     paintClue("Demasiado bajo.");
   }
   if (attempts >= 5) {
-    paintClue(' "The game is over". ');
+    paintClue("The game is over");
   }
 };
 
@@ -74,7 +74,7 @@ const handleClickResetBtn = (event) => {
   randomNumber = getRandomNumber(100);
 
   resetAttempts();
-  paintClue("Escribe el número y dale a prueba");
+  paintClue("");
   form.reset();
 };
 
